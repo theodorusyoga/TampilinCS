@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<!-- GOOGLE FONTS -->
+<link
+	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Pinyon+Script'
+	rel='stylesheet' type='text/css'>
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'
+	rel='stylesheet' type='text/css'>
+<!-- CUSTOM STYLES -->
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../javascript/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../javascript/functions.js" type="text/javascript"></script>
+<title>Coming Soon: Tampilin.com</title>
 </head>
 <body>
-
+	<div class="header">
+		<div class="logotitle">
+			<!-- <img src="/images/insert-img.png"></img> -->
+			<!-- <p class="title">Tampilin.com</p> -->
+		</div>
+		<div class="headeroverlay"></div>
+		<ul>
+			<li><a href="#">Tentang Kami</a></li>
+			<li><a href="#">Facebook Page</a></li>
+			<li><a href="#">Instagram</a></li>
+		</ul>
+	</div>
+	<div class="cover">
+		<div class="content">
+			<div class="title">
+				<div class="main">Tampilin.com</div>
+				<div class="sub">&#9679;&nbsp;C O M I N G&nbsp;&nbsp;S O O
+					N&nbsp;&#9679;</div>
+				<div class="subdate">on</div>
+				<div class="subdate">February 15, 2016</div>
+			</div>
+		</div>
+		<div class="caption">
+			<div class="main"><a href="#opendetails">Pelajari lagi</a>&nbsp;></div>
+		</div>
+	</div>
+	<div class="details">
+	</div>
 </body>
 </html>
