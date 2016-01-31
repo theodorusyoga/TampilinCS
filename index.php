@@ -32,7 +32,9 @@
 	<div class="cover">
 		<div class="content">
 			<div class="title">
-				<div class="main">Tampilin.com</div>
+				<div class="main">
+					<span>T</span><span>a</span><span>m</span><span>p</span><span>i</span><span>l</span><span>i</span><span>n</span><span>.</span><span>c</span><span>o</span><span>m</span>
+				</div>
 				<div class="sub">&#9679;&nbsp;C O M I N G&nbsp;&nbsp;S O O
 					N&nbsp;&#9679;</div>
 				<div class="subdate">on</div>
@@ -40,10 +42,23 @@
 			</div>
 		</div>
 		<div class="caption">
-			<div class="main"><a href="#opendetails">Pelajari lagi</a>&nbsp;></div>
+			<div class="main">
+				<a href="#opendetails">Pelajari lagi &gt;</a>
+			</div>
 		</div>
 	</div>
 	<div class="details">
+		<div class="caption">
+			<div class="backlink">
+				<a href="#closedetails">&lt; Kembali</a>
+			</div>
+		</div>
+		<div class="sky">
+			<div class="sunmorning"></div>
+		</div>
+		<div class="buildings">
+			<div class="rumahijo"></div>
+		</div>
 	</div>
 </body>
 </html>

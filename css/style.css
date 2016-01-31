@@ -5,13 +5,17 @@ html, body {
 	overflow: hidden;
 }
 
-.details{
+.details {
 	z-index: 2;
 	top: 0px;
 	margin-top: 0%;
 	padding-top: 0px;
 	margin-bottom: 0px;
-	background: url('/images/back_bg.jpg') no-repeat;
+	/* background: url('/images/back_bg.jpg') no-repeat; */
+	background: -webkit-linear-gradient(white 20%, lightgrey 40%);
+	background: -o-linear-gradient(white 20%, lightgrey 40%);
+	background: -moz-linear-gradient(white 20%, lightgrey 40%);
+	background: linear-gradient(white 20%, lightgrey 40%);
 	background-size: 100% auto;
 	display: block;
 	position: relative;
@@ -119,6 +123,10 @@ html, body {
 	text-align: center;
 }
 
+.content .title .main span {
+	opacity: 0;
+}
+
 .content .title .sub {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: lighter;
@@ -135,28 +143,132 @@ html, body {
 
 .caption {
 	float: right;
-	position: relative;	
+	position: relative;
 	padding-top: 22.5%;
 	font-family: 'Hind Vadodara', sans-serif;
 	font-size: 22px;
 	color: #FFFFFF;
 	min-width: 17.5%;
+	right: -250px;
 }
 
-.caption .main{
-	padding-top: 5%;
+.caption .main {
+	width: 0px;
+	height: 0px;
+	border-top: 30px solid #FF6F6F;
+	border-bottom: 30px solid #FF6F6F;
+	border-right: 200px solid #FF6F6F;
+	/* 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-left: 22%;
-	padding-right: 22%;
-	background-color: #FF6F6F;
+	padding-right: 22%; */
+	background-color: transparent;
 	cursor: pointer;
+	border-left: 50px solid transparent;
+	background-color: transparent
 }
 
-.caption .main:HOVER{
-	background-color: #D1404A;
+.caption .main:HOVER {
+	border-top: 30px solid #D1404A;
+	border-bottom: 30px solid #D1404A;
+	border-right: 200px solid #D1404A;
+	margin-top: -2%;
 }
 
-.caption .main a{
+.caption .main a {
 	color: #FFFFFF;
 	text-decoration: none;
+	min-width: 200px;
+	position: absolute;
+	margin-top: -7%;
+	margin-left: 10%;
 }
+
+/* DETAILS SECTION */
+.details .caption {
+	float: left;
+	position: relative;
+	padding-top: 22.5%;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 22px;
+	color: #FFFFFF;
+	min-width: 17.5%;
+	left: -250px;
+	z-index: 99;
+}
+
+.details .caption .backlink {
+	width: 0px;
+	height: 0px;
+	border-top: 30px solid #FF6F6F;
+	border-bottom: 30px solid #FF6F6F;
+	border-right: 30px solid transparent;
+	/* 	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 22%;
+	padding-right: 22%; */
+	background-color: transparent;
+	cursor: pointer;
+	border-left: 150px solid #FF6F6F;
+	background-color: transparent
+}
+
+.details .caption .backlink:HOVER {
+	border-top: 30px solid #D1404A;
+	border-bottom: 30px solid #D1404A;
+	border-left: 150px solid #D1404A;
+	margin-top: -2%;
+}
+
+.details .caption .backlink a {
+	color: #FFFFFF;
+	text-decoration: none;
+	min-width: 200px;
+	position: absolute;
+	margin-left: -60%;
+	margin-top: -7%;
+}
+
+.sky {
+	z-index: 3;
+	min-height: 100px;
+	min-width: 100px;
+	max-width: 100px;
+	padding-left: 45%;
+	padding-top: 15%;
+}
+
+.sky .sunmorning {
+	background: url('/images/morning/sun.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 100%;
+	height: 100px;
+	display: block;
+	-webkit-filter: drop-shadow(0px 0px 20px #efa638);
+	filter: drop-shadow(5px 5px 5px #efa638);
+}
+
+.buildings {
+	z-index: 3;
+	min-height: 100px;
+	min-width: 100%;
+	padding-top: 8%;
+	padding-left: 10%;
+	padding-bottom: 0%;
+	margin-bottom: 0px;
+	bottom: 0px;
+	position: relative;
+}
+
+.buildings .rumahijo {
+	background: url('/images/morning/Rumah ijo.png') no-repeat;
+	background-size: 12.5% auto;
+	min-height: 100%;
+	min-width: 100%;
+	height: 350px;
+	display: block;
+	
+}
+
+/* END DETAILS SECTION */
