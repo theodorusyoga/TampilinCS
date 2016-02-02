@@ -12,10 +12,10 @@ html, body {
 	padding-top: 0px;
 	margin-bottom: 0px;
 	/* background: url('/images/back_bg.jpg') no-repeat; */
-	background: -webkit-linear-gradient(white 20%, lightgrey 40%);
-	background: -o-linear-gradient(white 20%, lightgrey 40%);
-	background: -moz-linear-gradient(white 20%, lightgrey 40%);
-	background: linear-gradient(white 20%, lightgrey 40%);
+	background: -webkit-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
+	background: -o-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
+	background: -moz-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
+	background: linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
 	background-size: 100% auto;
 	display: block;
 	position: relative;
@@ -262,6 +262,8 @@ html, body {
 	height: 200px;
 	min-width: 250px;
 	position: fixed;
+	top: 200px;	
+	left: -200px;
 }
 
 .sky .cloud2 {
@@ -271,7 +273,7 @@ html, body {
 	height: 250px;
 	min-width: 200px;
 	position: fixed;
-	left: 300px;
+	left: 1400px;
 	top: 270px;
 	z-index: 60;
 }
@@ -283,7 +285,7 @@ html, body {
 	height: 200px;
 	min-width: 200px;
 	position: fixed;
-	left: 850px;
+	left: 1600px;
 	z-index: 60;
 	top: 125px;
 }
@@ -295,7 +297,7 @@ html, body {
 	height: 100px;
 	min-width: 170px;
 	position: fixed;
-	left: 100px;
+	left: -500px;
 	z-index: 60;
 	top: 100px;
 }
