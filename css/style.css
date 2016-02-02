@@ -240,35 +240,210 @@ html, body {
 
 .sky .sunmorning {
 	background: url('/images/morning/sun.png') no-repeat;
-	background-size: 100% auto;
+	background-size: 10% auto;
 	min-height: 100%;
 	min-width: 100%;
 	height: 100px;
+	width: 100px;
+	max-height: 100px;
+	max-width: 100px;
 	display: block;
-	-webkit-filter: drop-shadow(0px 0px 20px #efa638);
+	position: fixed;
+	-webkit-filter: drop-shadow(0px 20px 20px #efa638);
 	filter: drop-shadow(5px 5px 5px #efa638);
+	margin-left: 40%;
+	margin-top: 30%;
 }
 
 .buildings {
 	z-index: 3;
-	min-height: 100px;
+	min-height: 300px;
 	min-width: 100%;
-	padding-top: 8%;
-	padding-left: 10%;
+	padding-top: 31%;
+	padding-left: 12.5%;
 	padding-bottom: 0%;
 	margin-bottom: 0px;
 	bottom: 0px;
-	position: relative;
+	top: 0px;
+	position: absolute;
 }
 
+
 .buildings .rumahijo {
+	z-index: 40;
 	background: url('/images/morning/Rumah ijo.png') no-repeat;
-	background-size: 12.5% auto;
+	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 100%;
+	min-width: 170px;
 	height: 350px;
-	display: block;
-	
+	display: inline-block;
+	position: absolute;
+	top: 700px;
+}
+
+.buildings .rumahbiru {
+	z-index: 42;
+	background: url('/images/morning/Rumah biru.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 185px;
+	height: 350px;
+	display: inline-block;
+	position: absolute;
+	left: 23%;
+	top: 700px;
+}
+
+.buildings .rumahpizza {
+	z-index: 43;
+	background: url('/images/morning/Rumah Pizza.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	height: 350px;
+	display: inline-block;
+	position: absolute;
+	left: 56%;
+	top: 700px;
+}
+
+.buildings .rumahroti {
+	z-index: 41;
+	background: url('/images/morning/Rumah roti.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 290px;
+	height: 350px;
+	display: inline-block;
+	position: absolute;
+	left: 36%;
+	top: 700px;
+}
+
+.buildings .rumahkecil {
+	z-index: 41;
+	background: url('/images/morning/Rumah kecil.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 130px;
+	height: 200px;
+	display: inline-block;
+	position: absolute;
+	left: 70%;
+	top: 700px;
+}
+
+.buildings .tugu {
+	z-index: 41;
+	background: url('/images/morning/Tugu.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 130px;
+	bottom: 0px;
+	top: 45%;
+	height: 200px;
+	display: inline-block;
+	position: absolute;
+	left: 77%;
+	top: 700px;
+}
+
+.shadows{
+	z-index: 2;
+	min-height: 300px;
+	min-width: 100%;
+	padding-top: 20%;
+	padding-left: 12.5%;
+	padding-bottom: 0%;
+	margin-bottom: 0px;
+	bottom: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.shadows .gedung1 {
+	z-index: 31;
+	background: url('/images/morning/Gedung1.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 100px;	
+	bottom: 0px;
+	top: 30%;
+	height: 350px;
+	display: inline-block;
+	position: absolute;
+	top: 900px;
+}
+
+.shadows .gedung2 {
+	z-index: 32;
+	background: url('/images/morning/Gedung2.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 175px;
+	bottom: 0px;
+	top: 40%;
+	margin-top: 7.5%;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	left: 17.5%;
+	top: 900px;
+}
+
+.shadows .gedung3 {
+	z-index: 34;
+	background: url('/images/morning/Gedung3.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 150px;
+	margin-top: 9%;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	left: 30%;
+	top: 900px;
+}
+
+.shadows .gedung4 {
+	z-index: 33;
+	background: url('/images/morning/Gedung bayangan.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 175px;
+	margin-top: 6%;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	left: 38%;
+	top: 900px;
+}
+.shadows .gedung5 {
+	z-index: 32;
+	background: url('/images/morning/Gedung2.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	margin-top: 7.5%;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 900px;
+}
+
+.shadows .gedung6 {
+	z-index: 34;
+	background: url('/images/morning/Gedung3.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 190px;
+	margin-top: 2%;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	left: 64%;
+	top: 900px;
 }
 
 /* END DETAILS SECTION */

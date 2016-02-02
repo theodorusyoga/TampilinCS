@@ -58,6 +58,19 @@
 		</div>
 		<div class="buildings">
 			<div class="rumahijo"></div>
+			<div class="rumahbiru"></div>
+			<div class="rumahroti"></div>
+			<div class="rumahpizza"></div>
+			<div class="rumahkecil"></div>
+			<div class="tugu"></div>
+		</div>
+		<div class="shadows">
+			<div class="gedung1"></div>
+			<div class="gedung2"></div>
+			<div class="gedung3"></div>
+			<div class="gedung4"></div>
+			<div class="gedung5"></div>
+			<div class="gedung6"></div>
 		</div>
 	</div>
 </body>
