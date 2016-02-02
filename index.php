@@ -55,6 +55,10 @@
 		</div>
 		<div class="sky">
 			<div class="sunmorning"></div>
+			<div class="cloud1"></div>
+			<div class="cloud2"></div>
+			<div class="cloud3"></div>
+			<div class="cloud4"></div>
 		</div>
 		<div class="buildings">
 			<div class="rumahijo"></div>
@@ -71,6 +75,13 @@
 			<div class="gedung4"></div>
 			<div class="gedung5"></div>
 			<div class="gedung6"></div>
+		</div>
+		<div class="sprites">
+			<div class="worker"></div>
+			<div class="traveler"></div>
+			<div class="bossy"></div>
+			<div class="baker"></div>
+			<div class="wisuda"></div>
 		</div>
 	</div>
 </body>

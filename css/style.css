@@ -230,7 +230,7 @@ html, body {
 }
 
 .sky {
-	z-index: 3;
+	z-index: 6;
 	min-height: 100px;
 	min-width: 100px;
 	max-width: 100px;
@@ -255,6 +255,51 @@ html, body {
 	margin-top: 30%;
 }
 
+.sky .cloud1 {
+	background: url('/images/morning/Awan pagi.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	height: 200px;
+	min-width: 250px;
+	position: fixed;
+}
+
+.sky .cloud2 {
+	background: url('/images/morning/Awan pagi.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	height: 250px;
+	min-width: 200px;
+	position: fixed;
+	left: 300px;
+	top: 270px;
+	z-index: 60;
+}
+
+.sky .cloud3 {
+	background: url('/images/morning/Awan pagi.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	height: 200px;
+	min-width: 200px;
+	position: fixed;
+	left: 850px;
+	z-index: 60;
+	top: 125px;
+}
+
+.sky .cloud4 {
+	background: url('/images/morning/Awan pagi.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	height: 100px;
+	min-width: 170px;
+	position: fixed;
+	left: 100px;
+	z-index: 60;
+	top: 100px;
+}
+
 .buildings {
 	z-index: 3;
 	min-height: 300px;
@@ -267,7 +312,6 @@ html, body {
 	top: 0px;
 	position: absolute;
 }
-
 
 .buildings .rumahijo {
 	z-index: 40;
@@ -348,7 +392,7 @@ html, body {
 	top: 700px;
 }
 
-.shadows{
+.shadows {
 	z-index: 2;
 	min-height: 300px;
 	min-width: 100%;
@@ -366,7 +410,7 @@ html, body {
 	background: url('/images/morning/Gedung1.png') no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 100px;	
+	min-width: 100px;
 	bottom: 0px;
 	top: 30%;
 	height: 350px;
@@ -418,6 +462,7 @@ html, body {
 	left: 38%;
 	top: 900px;
 }
+
 .shadows .gedung5 {
 	z-index: 32;
 	background: url('/images/morning/Gedung2.png') no-repeat;
@@ -444,6 +489,88 @@ html, body {
 	position: absolute;
 	left: 64%;
 	top: 900px;
+}
+
+.sprites {
+	z-index: 4;
+	min-height: 300px;
+	min-width: 100%;
+	padding-top: 31%;
+	padding-left: 12.5%;
+	padding-bottom: 0%;
+	margin-bottom: 0px;
+	bottom: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.sprites .worker {
+	z-index: 40;
+	background: url('/images/characters/worker.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 80px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 345px;
+}
+
+.sprites .traveler {
+	z-index: 40;
+	background: url('/images/characters/Traveler.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 95px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 345px;
+	left: 300px;
+}
+
+.sprites .bossy {
+	z-index: 40;
+	background: url('/images/characters/Bossy.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 95px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 360px;
+	left: 550px;
+}
+
+.sprites .baker {
+	z-index: 40;
+	background: url('/images/characters/baker.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 85px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 350px;
+	left: 700px;
+}
+
+.sprites .wisuda {
+	z-index: 40;
+	background: url('/images/characters/wisuda.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 90px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 335px;
+	left: 950px;
 }
 
 /* END DETAILS SECTION */
