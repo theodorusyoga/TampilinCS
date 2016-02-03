@@ -104,7 +104,7 @@ html, body {
 .content {
 	position: fixed;
 	left: 35%;
-	top: 30%;
+	top: 25%;
 	z-index: 999;
 }
 
@@ -135,7 +135,66 @@ html, body {
 	font-family: 'Pinyon Script', cursive;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 36px;
+	padding-top: 5%;
+}
+
+.content .title .subinput {
+	padding-top: 5%;
+	text-align: center;
+	position: relative;
+}
+
+.content .title .subinput input, button {
+	font-family: 'Hind Vadodara', sans-serif;
+	min-width: 100%;
+	text-align: center;
+	min-height: 32px;
+	font-size: 20px;
+}
+
+.content .title .subinput input {
+	color: grey;
+	border-radius: 5px;
+	padding: 2px;
+	border: 2px solid #ccc;
+	-webkit-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	-moz-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	min-width: 98%;
+}
+
+.content .title .subinput button {
+	padding: 5px 15px;
+	font-size: 18px;
+	background: #FF6F6F;
+	margin-top: 2%;
+	color: #ffffff;
+	border: 0 none;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.content .title .subinput button:HOVER{
+	background: #D1404A;
+	-webkit-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	-moz-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
+	
+}
+
+.content .title .subinput input:HOVER {
+	-webkit-box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
+	-moz-box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
+	box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
+}
+
+.content .title .subinput input:FOCUS {
+	border-color: #0dccc0;
+	-webkit-box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
+	-moz-box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
+	box-shadow: 0px 1px 37px -2px rgba(251, 207, 97, 1);
 }
 
 .caption {
@@ -143,7 +202,7 @@ html, body {
 	position: relative;
 	padding-top: 22.5%;
 	font-family: 'Hind Vadodara', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	color: #FFFFFF;
 	min-width: 17.5%;
 	right: -250px;
@@ -177,8 +236,8 @@ html, body {
 	text-decoration: none;
 	min-width: 200px;
 	position: absolute;
-	margin-top: -7%;
-	margin-left: 10%;
+	margin-top: -6%;
+	margin-left: 6%;
 }
 
 /* DETAILS SECTION */
@@ -237,7 +296,7 @@ html, body {
 
 .sky .sunmorning {
 	background-image: url('/images/morning/sun.png');
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 	background-size: 10% auto;
 	min-height: 100%;
 	min-width: 100%;
@@ -260,7 +319,7 @@ html, body {
 	height: 200px;
 	min-width: 250px;
 	position: fixed;
-	top: 200px;	
+	top: 200px;
 	left: -400px;
 }
 
@@ -315,7 +374,8 @@ html, body {
 
 .buildings .rumahijo {
 	z-index: 40;
-	background: url('/images/morning/Rumah ijo.png') no-repeat;
+	background-image: url('/images/morning/Rumah ijo.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 170px;
@@ -323,11 +383,13 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	top: 700px;
+	background-size: 100% auto;
 }
 
 .buildings .rumahbiru {
 	z-index: 42;
-	background: url('/images/morning/Rumah biru.png') no-repeat;
+	background-image: url('/images/morning/Rumah biru.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 185px;
@@ -336,11 +398,13 @@ html, body {
 	position: absolute;
 	left: 23%;
 	top: 700px;
+	background-size: 100% auto;
 }
 
 .buildings .rumahpizza {
 	z-index: 43;
-	background: url('/images/morning/Rumah Pizza.png') no-repeat;
+	background-image: url('/images/morning/Rumah Pizza.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 200px;
@@ -349,11 +413,13 @@ html, body {
 	position: absolute;
 	left: 56%;
 	top: 700px;
+	background-size: 100% auto;
 }
 
 .buildings .rumahroti {
 	z-index: 41;
-	background: url('/images/morning/Rumah roti.png') no-repeat;
+	background-image: url('/images/morning/Rumah roti.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 290px;
@@ -362,11 +428,13 @@ html, body {
 	position: absolute;
 	left: 36%;
 	top: 700px;
+	background-size: 100% auto;
 }
 
 .buildings .rumahkecil {
 	z-index: 41;
-	background: url('/images/morning/Rumah kecil.png') no-repeat;
+	background-image: url('/images/morning/Rumah kecil.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 130px;
@@ -375,6 +443,7 @@ html, body {
 	position: absolute;
 	left: 70%;
 	top: 700px;
+	background-size: 100% auto;
 }
 
 .buildings .tugu {
@@ -407,7 +476,8 @@ html, body {
 
 .shadows .gedung1 {
 	z-index: 31;
-	background: url('/images/morning/Gedung1.png') no-repeat;
+	background-image: url('/images/morning/Gedung1.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 100px;
@@ -417,11 +487,13 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .shadows .gedung2 {
 	z-index: 32;
-	background: url('/images/morning/Gedung2.png') no-repeat;
+	background-image: url('/images/morning/Gedung2.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 175px;
@@ -433,11 +505,13 @@ html, body {
 	position: absolute;
 	left: 17.5%;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .shadows .gedung3 {
 	z-index: 34;
-	background: url('/images/morning/Gedung3.png') no-repeat;
+	background-image: url('/images/morning/Gedung3.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 150px;
@@ -447,11 +521,13 @@ html, body {
 	position: absolute;
 	left: 30%;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .shadows .gedung4 {
 	z-index: 33;
-	background: url('/images/morning/Gedung bayangan.png') no-repeat;
+	background-image: url('/images/morning/Gedung bayangan.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 175px;
@@ -461,11 +537,13 @@ html, body {
 	position: absolute;
 	left: 38%;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .shadows .gedung5 {
 	z-index: 32;
-	background: url('/images/morning/Gedung2.png') no-repeat;
+	background-image: url('/images/morning/Gedung2.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 200px;
@@ -475,11 +553,13 @@ html, body {
 	position: absolute;
 	left: 50%;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .shadows .gedung6 {
 	z-index: 34;
-	background: url('/images/morning/Gedung3.png') no-repeat;
+	background-image: url('/images/morning/Gedung3.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	min-height: 100%;
 	min-width: 190px;
@@ -489,6 +569,7 @@ html, body {
 	position: absolute;
 	left: 64%;
 	top: 900px;
+	background-size: 100% auto;
 }
 
 .sprites {
@@ -514,7 +595,7 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	bottom: 0px;
-	top: 345px;
+	top: 900px;
 }
 
 .sprites .traveler {
@@ -527,8 +608,36 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	bottom: 0px;
-	top: 345px;
+	top: 900px;
 	left: 300px;
+}
+
+.sprites .tree1 {
+	z-index: 40;
+	background: url('/images/characters/Pohon.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 95px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 440px;
+	left: 410px;
+}
+
+.sprites .tree2 {
+	z-index: 40;
+	background: url('/images/characters/Pohon.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 95px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 440px;
+	left: 820px;
 }
 
 .sprites .bossy {
@@ -541,7 +650,7 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	bottom: 0px;
-	top: 360px;
+	top: 900px;
 	left: 550px;
 }
 
@@ -555,7 +664,7 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	bottom: 0px;
-	top: 350px;
+	top: 900px;
 	left: 700px;
 }
 
@@ -569,8 +678,92 @@ html, body {
 	display: inline-block;
 	position: absolute;
 	bottom: 0px;
-	top: 335px;
+	top: 900px;
 	left: 950px;
+}
+
+.talks {
+	z-index: 5;
+	min-height: 300px;
+	min-width: 100%;
+	padding-top: 31%;
+	padding-left: 12.5%;
+	padding-bottom: 0%;
+	margin-bottom: 0px;
+	bottom: 0px;
+	top: 0px;
+	position: absolute;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.talks .talk1 {
+	z-index: 51;
+	background: url('/images/characters/Omongan.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 200px;
+	text-align: center;
+	padding-top: 2.5%;
+	left: -400px;
+}
+
+.talks .talk2 {
+	font-size: 18px;
+	z-index: 51;
+	background: url('/images/characters/Omongan.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 200px;
+	text-align: center;
+	padding-top: 2%;
+	left: 1400px;
+}
+
+.talks .talk3 {
+	font-size: 18px;
+	z-index: 51;
+	background: url('/images/characters/Omongan.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 200px;
+	text-align: center;
+	padding-top: 2%;
+	left: 1400px;
+}
+
+.talks .talk4 {
+	font-size: 18px;
+	z-index: 51;
+	background: url('/images/characters/Omongan.png') no-repeat;
+	background-size: 100% auto;
+	min-height: 100%;
+	min-width: 200px;
+	height: 325px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	top: 200px;
+	text-align: center;
+	padding-top: 2%;
+	left: -400px;
 }
 
 /* END DETAILS SECTION */

@@ -1,114 +1,227 @@
 var interval;
 var interval2;
 
-$(document).ready(function() {
-	setTeaser();
-	$('.sunmorning').hide();
-	$('.cloud1').hide();
-	$('.cloud2').hide();
-	$('.cloud3').hide();
-	$('.cloud4').hide();
-	$('.caption .main').hover(onHover, unHover);
+$(document)
+		.ready(
+				function() {
+					setTeaser();
+					$('.sunmorning').hide();
+					$('.cloud1').hide();
+					$('.cloud2').hide();
+					$('.cloud3').hide();
+					$('.cloud4').hide();
+					$('.caption .main').hover(onHover, unHover);
 
-	// open details
-	$('.caption .main').click(function() {
-		animateBuildings();
-		setTimeout(function(){
-			setMorning();
-		}, 4000);
-		$('.caption .main').unbind('mouseenter', onHover);
-		$('.caption .main').unbind('mouseleave', unHover);
-		$('.content .title .sub').css('visibility', 'hidden');
-		$('.content .title .subdate').css('visibility', 'hidden');
-		$('.content .title .main').animate({
-			fontSize : '38',
-			marginTop : '-40%',
-			marginLeft : '-240%'
-		}, 750);
-		$('.cover').animate({
-			left : "-2000",
-		}, 1000);
-		$('.header .headeroverlay').animate({
-			opacity : "0.9",
-		}, 500);
+					// open details
+					$('.caption .main')
+							.click(
+									function() {
+										$('.next')
+												.html(
+														'Memuat... <img src="/images/loading.gif" width="26" height="26"></img>');
+										animateBuildings();
+										setTimeout(function() {
+											$('.sunmorning').show();
+											setMorning();
+										}, 4000);
+										$('.caption .main').unbind(
+												'mouseenter', onHover);
+										$('.caption .main').unbind(
+												'mouseleave', unHover);
+										$('.content .title .sub').css(
+												'visibility', 'hidden');
+										$('.content .title .subdate').css(
+												'visibility', 'hidden');
+										$('.content .title .subinput').css(
+												'visibility', 'hidden');
+										$('.content .title .main').animate({
+											fontSize : '38',
+											marginTop : '-27%',
+											marginLeft : '-220%'
+										}, 750);
+										$('.cover').animate({
+											left : "-2000",
+										}, 1000);
+										$('.header .headeroverlay').animate({
+											opacity : "0.9",
+										}, 500);
 
-		var changeColor = window.setInterval(function() {
-			$('.content .title .main').css('color', '#FFFFFF');
-			$('.header .headeroverlay').css('background-color', '#2C3E50');
-			$('.details').animate({
-				top : '-100%'
-			}, 500);
-			$('.details .caption').animate({
-				left : '0'
-			}, 1500);
-			$('.cloud1').show();
+										var changeColor = window
+												.setInterval(
+														function() {
+															$(
+																	'.content .title .main')
+																	.css(
+																			'color',
+																			'#FFFFFF');
+															$(
+																	'.header .headeroverlay')
+																	.css(
+																			'background-color',
+																			'#2C3E50');
+															$('.details')
+																	.animate(
+																			{
+																				top : '-100%'
+																			},
+																			500);
+															$(
+																	'.details .caption')
+																	.animate(
+																			{
+																				left : '0'
+																			},
+																			4000);
+															$('.cloud1').show();
 
-			window.setInterval(function() {
-				$('.cloud1').animate({
-					left : '+=1'
-				}, 50);
-			}, 1);
-			$('.cloud2').show();
-			window.setInterval(function() {
-				$('.cloud2').animate({
-					left : '-=2'
-				}, 50);
-			}, 1);
-			$('.cloud3').show();
-			window.setInterval(function() {
-				$('.cloud3').animate({
-					left : '-=1'
-				}, 30);
-			}, 1);
-			$('.cloud4').show();
-			window.setInterval(function() {
-				$('.cloud4').animate({
-					left : '+=2'
-				}, 20);
-			}, 1);
-			clearInterval(changeColor);
-		}, 750);
-	});
+															window
+																	.setInterval(
+																			function() {
+																				$(
+																						'.cloud1')
+																						.animate(
+																								{
+																									left : '+=1'
+																								},
+																								50);
+																			},
+																			1);
+															$('.cloud2').show();
+															window
+																	.setInterval(
+																			function() {
+																				$(
+																						'.cloud2')
+																						.animate(
+																								{
+																									left : '-=2'
+																								},
+																								50);
+																			},
+																			1);
+															$('.cloud3').show();
+															window
+																	.setInterval(
+																			function() {
+																				$(
+																						'.cloud3')
+																						.animate(
+																								{
+																									left : '-=1'
+																								},
+																								30);
+																			},
+																			1);
+															$('.cloud4').show();
+															window
+																	.setInterval(
+																			function() {
+																				$(
+																						'.cloud4')
+																						.animate(
+																								{
+																									left : '+=2'
+																								},
+																								20);
+																			},
+																			1);
+															clearInterval(changeColor);
+															$('.next')
+																	.html(
+																			'Apa itu Tampilin.com?');
+														}, 750);
+									});
 
-	// close details
-	$('.details .caption .backlink').click(function() {
-		$('.sunmorning').stop();
-		$('.sunmorning').fadeOut('fast');
-		$('.cloud1').hide();
-		$('.cloud2').hide();
-		$('.cloud3').hide();
-		$('.cloud4').hide();
-		hideBuildings();
-		$('.cover').animate({
-			left : "0",
-		}, 1000);
-		$('.header .headeroverlay').animate({
-			opacity : "0.6",
-		}, 500);
-		var changeColor = window.setInterval(function() {
-			$('.sunmorning').hide();
-			$('.content .title .sub').css('visibility', 'visible');
-			$('.content .title .subdate').css('visibility', 'visible');
-			$('.content .title .main').animate({
-				fontSize : '80',
-				marginTop : '0',
-				marginLeft : '0'
-			}, 500);
-			$('.content .title .main').css('color', '#000000');
-			$('.header .headeroverlay').css('background-color', '#000000');
-			$('.details').animate({
-				top : '0'
-			}, 500);
-			$('.details .caption').animate({
-				left : '-250'
-			}, 1500);
-			$('.caption .main').bind('mouseenter', onHover);
-			$('.caption .main').bind('mouseleave', unHover);
-			setTeaser();
-			clearInterval(changeColor);
-		}, 3000);
-	});
-});
+					// close details
+					$('.details .caption .backlink')
+							.click(
+									function() {
+										$('.back')
+												.html(
+														'Memuat... <img src="/images/loading.gif" width="26" height="26"></img>');
+										$('.sunmorning').stop();
+										$('.details').stop();
+										$('.sunmorning').fadeOut('fast');
+										$('.cloud1').hide();
+										$('.cloud2').hide();
+										$('.cloud3').hide();
+										$('.cloud4').hide();
+										hideBuildings();
+										$('.cover').animate({
+											left : "0",
+										}, 1000);
+										$('.header .headeroverlay').animate({
+											opacity : "0.6",
+										}, 500);
+										var changeColor = window
+												.setInterval(
+														function() {
+															$('.sunmorning')
+																	.hide();
+															$(
+																	'.content .title .sub')
+																	.css(
+																			'visibility',
+																			'visible');
+															$(
+																	'.content .title .subdate')
+																	.css(
+																			'visibility',
+																			'visible');
+															$(
+																	'.content .title .subinput')
+																	.css(
+																			'visibility',
+																			'visible');
+															$(
+																	'.content .title .main')
+																	.animate(
+																			{
+																				fontSize : '80',
+																				marginTop : '0',
+																				marginLeft : '0'
+																			},
+																			500);
+															$(
+																	'.content .title .main')
+																	.css(
+																			'color',
+																			'#000000');
+															$(
+																	'.header .headeroverlay')
+																	.css(
+																			'background-color',
+																			'#000000');
+															$('.details')
+																	.animate(
+																			{
+																				top : '0'
+																			},
+																			500);
+															$(
+																	'.details .caption')
+																	.animate(
+																			{
+																				left : '-250'
+																			},
+																			1500);
+															$('.caption .main')
+																	.bind(
+																			'mouseenter',
+																			onHover);
+															$('.caption .main')
+																	.bind(
+																			'mouseleave',
+																			unHover);
+															$('.back')
+																	.html(
+																			'< Kembali');
+															setTeaser();
+															window.location.reload();
+															clearInterval(changeColor);
+														}, 3000);
+									});
+				});
 
 function animateBuildings() {
 	var time = getRandomInt(1000, 2000);
@@ -154,6 +267,68 @@ function animateBuildings() {
 		}, 400);
 		clearInterval(func6);
 	}, time);
+	
+	/*SPRITES*/
+	time = getRandomInt(1000, 2000);
+	var func13 = window.setInterval(function() {
+		$('.worker').animate({
+			top : '345'
+		}, 400);
+		clearInterval(func13);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func14 = window.setInterval(function() {
+		$('.traveler').animate({
+			top : '345'
+		}, 400);
+		clearInterval(func14);
+	}, time);
+	var func15 = window.setInterval(function() {
+		$('.talk1').animate({
+			left : '150'
+		}, 400);
+		clearInterval(func15);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func16 = window.setInterval(function() {
+		$('.bossy').animate({
+			top : '360'
+		}, 400);
+		clearInterval(func16);
+	}, time);
+	var func17 = window.setInterval(function() {
+		$('.talk4').animate({
+			left : '380'
+		}, 400);
+		clearInterval(func17);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func18 = window.setInterval(function() {
+		$('.baker').animate({
+			top : '350'
+		}, 400);
+		clearInterval(func18);
+	}, time);
+	var func19 = window.setInterval(function() {
+		$('.talk2').animate({
+			left : '600'
+		}, 400);
+		clearInterval(func19);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func20 = window.setInterval(function() {
+		$('.wisuda').animate({
+			top : '335'
+		}, 400);
+		clearInterval(func20);
+	}, time);
+	var func21 = window.setInterval(function() {
+		$('.talk3').animate({
+			left : '850'
+		}, 400);
+		clearInterval(func21);
+	}, time);
+	
 	/* SHADOWS */
 	time = getRandomInt(2000, 2500);
 	var func7 = window.setInterval(function() {
@@ -243,6 +418,68 @@ function hideBuildings() {
 		}, 400);
 		clearInterval(func6);
 	}, time);
+	
+	/*SPRITES*/
+	time = getRandomInt(1000, 2000);
+	var func13 = window.setInterval(function() {
+		$('.worker').animate({
+			top : '900'
+		}, 400);
+		clearInterval(func13);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func14 = window.setInterval(function() {
+		$('.traveler').animate({
+			top : '900'
+		}, 400);
+		clearInterval(func14);
+	}, time);
+	var func15 = window.setInterval(function() {
+		$('.talk1').animate({
+			left : '-400'
+		}, 400);
+		clearInterval(func15);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func16 = window.setInterval(function() {
+		$('.bossy').animate({
+			top : '900'
+		}, 400);
+		clearInterval(func16);
+	}, time);
+	var func17 = window.setInterval(function() {
+		$('.talk4').animate({
+			left : '-400'
+		}, 400);
+		clearInterval(func17);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func18 = window.setInterval(function() {
+		$('.baker').animate({
+			top : '900'
+		}, 400);
+		clearInterval(func18);
+	}, time);
+	var func19 = window.setInterval(function() {
+		$('.talk2').animate({
+			left : '1400'
+		}, 400);
+		clearInterval(func19);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func20 = window.setInterval(function() {
+		$('.wisuda').animate({
+			top : '900'
+		}, 400);
+		clearInterval(func20);
+	}, time);
+	var func21 = window.setInterval(function() {
+		$('.talk3').animate({
+			left : '1400'
+		}, 400);
+		clearInterval(func21);
+	}, time);
+	
 	/* SHADOWS */
 	time = getRandomInt(1000, 2000);
 	var func7 = window.setInterval(function() {
@@ -292,23 +529,72 @@ var t = 0;
 
 function setMorning() {
 	if ($('.sunmorning').position().top < -199) {
-
 		var night = setTimeout(function() {
-			if (isNight == false)
+			if (isNight == false) {
+				setTimeout(function() {
+					$('.buildings .rumahijo').css('background-image',
+							"url('/images/night/Rumah ijo.png')");
+					$('.buildings .rumahbiru').css('background-image',
+							"url('/images/night/Rumah biru.png')");
+					$('.buildings .rumahpizza').css('background-image',
+							"url('/images/night/Rumah pizza.png')");
+					$('.buildings .rumahroti').css('background-image',
+							"url('/images/night/Rumah roti.png')");
+					$('.buildings .rumahkecil').css('background-image',
+							"url('/images/night/Rumah kecil.png')");
+					$('.shadows .gedung1').css('background-image',
+							"url('/images/night/Gedung1.png')");
+					$('.shadows .gedung2').css('background-image',
+							"url('/images/night/Gedung2.png')");
+					$('.shadows .gedung3').css('background-image',
+							"url('/images/night/Gedung3.png')");
+					$('.shadows .gedung5').css('background-image',
+							"url('/images/night/Gedung1.png')");
+					$('.shadows .gedung6').css('background-image',
+							"url('/images/night/Gedung3.png')");
+				}, 5000);
+
 				$('.details').animate({
 					backgroundColor : jQuery.Color("rgba(37, 54, 82, 1)")
 				}, 5000);
-			else if (isNight == true)
+			}
+			// change night building
+
+			else if (isNight == true) {
+				setTimeout(function() {
+					$('.buildings .rumahijo').css('background-image',
+							"url('/images/morning/Rumah ijo.png')");
+					$('.buildings .rumahbiru').css('background-image',
+							"url('/images/morning/Rumah biru.png')");
+					$('.buildings .rumahpizza').css('background-image',
+							"url('/images/morning/Rumah pizza.png')");
+					$('.buildings .rumahroti').css('background-image',
+							"url('/images/morning/Rumah roti.png')");
+					$('.buildings .rumahkecil').css('background-image',
+							"url('/images/morning/Rumah kecil.png')");
+					$('.shadows .gedung1').css('background-image',
+							"url('/images/morning/Gedung1.png')");
+					$('.shadows .gedung2').css('background-image',
+							"url('/images/morning/Gedung2.png')");
+					$('.shadows .gedung3').css('background-image',
+							"url('/images/morning/Gedung3.png')");
+					$('.shadows .gedung5').css('background-image',
+							"url('/images/morning/Gedung1.png')");
+					$('.shadows .gedung6').css('background-image',
+							"url('/images/morning/Gedung3.png')");
+				}, 5000);
+
 				$('.details').animate({
 					backgroundColor : jQuery.Color("rgba(0, 133, 198, 1)")
 				}, 5000);
+			}
+
 			setNight();
 		}, 5000);
 
 		return;
 	}
 
-	$('.sunmorning').show();
 	t += 0.05;
 	var r = 200;
 	var xcenter = 0;
@@ -342,7 +628,6 @@ function setNight() {
 		return;
 	}
 
-	$('.sunmorning').show();
 	t += 0.05;
 	var r = 200;
 	var xcenter = 0;
