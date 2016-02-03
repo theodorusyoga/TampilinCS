@@ -13,9 +13,9 @@ $(document).ready(function() {
 	// open details
 	$('.caption .main').click(function() {
 		animateBuildings();
-		var nightint = window.setInterval(function() {
+		setTimeout(function(){
 			setMorning();
-		}, 5000);
+		}, 4000);
 		$('.caption .main').unbind('mouseenter', onHover);
 		$('.caption .main').unbind('mouseleave', unHover);
 		$('.content .title .sub').css('visibility', 'hidden');
@@ -72,6 +72,7 @@ $(document).ready(function() {
 
 	// close details
 	$('.details .caption .backlink').click(function() {
+		$('.sunmorning').stop();
 		$('.sunmorning').fadeOut('fast');
 		$('.cloud1').hide();
 		$('.cloud2').hide();
@@ -288,14 +289,24 @@ function hideBuildings() {
 }
 
 var t = 0;
+
 function setMorning() {
-	if (t > 4.6) { // sun in the top
-		t = 4.5;
-		setInterval(setMorning, 5000);
+	if ($('.sunmorning').position().top < -199) {
+
+		var night = setTimeout(function() {
+			if (isNight == false)
+				$('.details').animate({
+					backgroundColor : jQuery.Color("rgba(37, 54, 82, 1)")
+				}, 5000);
+			else if (isNight == true)
+				$('.details').animate({
+					backgroundColor : jQuery.Color("rgba(0, 133, 198, 1)")
+				}, 5000);
+			setNight();
+		}, 5000);
+
 		return;
 	}
-	if(t > 6)
-		t = 0;
 
 	$('.sunmorning').show();
 	t += 0.05;
@@ -307,8 +318,42 @@ function setMorning() {
 	$('.sunmorning').animate({
 		top : top,
 		left : left,
-	}, 5, function() {
+	}, 50, function() {
 		setMorning();
+	});
+}
+
+var isNight = false;
+function setNight() {
+	if ($('.sunmorning').position().top > 169) {
+		if (isNight == false) {
+			$('.sunmorning').css("background-image",
+					"url('/images/night/Moon.png')");
+			isNight = true;
+		} else if (isNight == true) {
+			$('.sunmorning').css("background-image",
+					"url('/images/morning/sun.png')");
+			isNight = false;
+		}
+		var night = setTimeout(function() {
+			setMorning();
+		}, 10);
+
+		return;
+	}
+
+	$('.sunmorning').show();
+	t += 0.05;
+	var r = 200;
+	var xcenter = 0;
+	var ycenter = 0;
+	var left = Math.floor(xcenter + (r * Math.cos(t)));
+	var top = Math.floor(ycenter + (r * Math.sin(t)));
+	$('.sunmorning').animate({
+		top : top,
+		left : left,
+	}, 50, function() {
+		setNight();
 	});
 }
 

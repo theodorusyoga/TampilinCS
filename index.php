@@ -13,6 +13,7 @@
 <!-- CUSTOM STYLES -->
 <link rel="stylesheet" href="../css/style.css" type="text/css" />
 <script src="../javascript/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../javascript/jquery.color-2.1.2.min.js" type="text/javascript"></script>
 <script src="../javascript/functions.js" type="text/javascript"></script>
 <title>Coming Soon: Tampilin.com</title>
 </head>

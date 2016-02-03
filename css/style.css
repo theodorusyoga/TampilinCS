@@ -12,10 +12,7 @@ html, body {
 	padding-top: 0px;
 	margin-bottom: 0px;
 	/* background: url('/images/back_bg.jpg') no-repeat; */
-	background: -webkit-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
-	background: -o-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
-	background: -moz-linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
-	background: linear-gradient(rgba(0, 133, 198, 1) 20%, rgba(0, 133, 198, 1) 40%);
+	background: rgba(0, 133, 198, 1);
 	background-size: 100% auto;
 	display: block;
 	position: relative;
@@ -239,7 +236,8 @@ html, body {
 }
 
 .sky .sunmorning {
-	background: url('/images/morning/sun.png') no-repeat;
+	background-image: url('/images/morning/sun.png');
+	background-repeat:no-repeat;
 	background-size: 10% auto;
 	min-height: 100%;
 	min-width: 100%;
@@ -263,7 +261,7 @@ html, body {
 	min-width: 250px;
 	position: fixed;
 	top: 200px;	
-	left: -200px;
+	left: -400px;
 }
 
 .sky .cloud2 {
