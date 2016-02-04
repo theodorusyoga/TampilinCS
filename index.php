@@ -61,8 +61,8 @@
 					N&nbsp;&#9679;</div>
 				<div class="subdate">We're still working on it!</div>
 				<div class="subinput">
-					<input type="text" placeholder="Masukkan emailmu di sini"></input>
-					<button>Kabari saya jika sudah tersedia!</button>
+					<input id="emailtb" type="text" placeholder="Masukkan emailmu di sini"></input>
+					<button id="submitbtn">Kabari saya jika sudah tersedia!</button>
 				</div>
 			</div>
 		</div>

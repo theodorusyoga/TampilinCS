@@ -1,8 +1,13 @@
 var interval;
 var interval2;
 
-$(document)
-		.ready(
+$(document).ready(function() {
+	$('.loading').fadeIn('slow');
+});
+
+$(window)
+		.on(
+				'load',
 				function() {
 					setTeaser();
 					$('.sunmorning').hide();
@@ -12,15 +17,15 @@ $(document)
 					$('.cloud3').hide();
 					$('.cloud4').hide();
 					$('.caption .main').hover(onHover, unHover);
-					
-					//do load
-					setTimeout(function(){
-						$('.loading').fadeIn('slow');
-						setTimeout(function(){
-							$('.loading').fadeOut('slow');
-						}, 3000);
+
+					// do load
+					setTimeout(function() {
+						$('.loading').fadeOut('slow');
 					}, 100);
 
+					$('#submitbtn').click(function(){
+						sendEmail();
+					});
 					// open details
 					$('.caption .main')
 							.click(
@@ -226,7 +231,8 @@ $(document)
 																	.html(
 																			'< Kembali');
 															setTeaser();
-															window.location.reload();
+															window.location
+																	.reload();
 															clearInterval(changeColor);
 														}, 3000);
 									});
@@ -276,8 +282,8 @@ function animateBuildings() {
 		}, 400);
 		clearInterval(func6);
 	}, time);
-	
-	/*SPRITES*/
+
+	/* SPRITES */
 	time = getRandomInt(1000, 2000);
 	var func13 = window.setInterval(function() {
 		$('.worker').animate({
@@ -337,7 +343,7 @@ function animateBuildings() {
 		}, 400);
 		clearInterval(func21);
 	}, time);
-	
+
 	/* SHADOWS */
 	time = getRandomInt(2000, 2500);
 	var func7 = window.setInterval(function() {
@@ -427,8 +433,8 @@ function hideBuildings() {
 		}, 400);
 		clearInterval(func6);
 	}, time);
-	
-	/*SPRITES*/
+
+	/* SPRITES */
 	time = getRandomInt(1000, 2000);
 	var func13 = window.setInterval(function() {
 		$('.worker').animate({
@@ -488,7 +494,7 @@ function hideBuildings() {
 		}, 400);
 		clearInterval(func21);
 	}, time);
-	
+
 	/* SHADOWS */
 	time = getRandomInt(1000, 2000);
 	var func7 = window.setInterval(function() {
@@ -709,4 +715,37 @@ function setTeaser() {
 			clearInterval(interval2);
 		}, 500);
 	}, 4000);
+}
+
+//ajax
+var url = 'http://tampilin-local.com/';
+
+function sendEmail(){
+	$('.loadingbar').show();
+	$('.loadingtext').html('Mendaftarkan email...	');
+	$('.loadingbar').css('background-image', "url('/images/loading.gif')");
+	$('.loading').fadeIn('slow');
+	var xmlhr = new XMLHttpRequest();
+	xmlhr.open('POST', url
+			+ '/functions/registerEmail.php', true);
+	xmlhr.onload = function(e){
+		if(xmlhr.readyState == 4){
+			if(xmlhr.status == 200){
+				if(xmlhr.responseText == '1'){
+					$('.loadingtext').html('Kamu sudah terdaftar! <br/>Tunggu email dari kami untuk berita berikutnya&nbsp;<img src="../images/emoticons/heart_400.png" width="32"></img>')
+					$('.loadingbar').css('background-image', "url('/images/ok-white.png')");
+					setTimeout(function(){
+						$('.loading').fadeOut('slow');
+					}, 2000);
+				}
+				else{
+					$('.loadingtext').html('Ups! Kamu masih belum berhasil mendaftar. Coba refresh halaman ini dulu&nbsp;<img src="../images/emoticons/persons-0006_large.png" width="32"></img>')
+					$('.loadingbar').css('background-image', "url('/images/error-white.png')");
+				}
+			}
+		}
+	};
+	var data = new FormData();
+	data.append('email', $('#emailtb').val());
+	xmlhr.send(data);
 }
