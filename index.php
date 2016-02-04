@@ -6,7 +6,8 @@
 <meta name="description"
 	content="Tampilin.com, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.com. Stay tuned guys!">
 <meta property="og:title" content="Tampilin.com: Segera Hadir">
-<meta property="og:description" content="Tampilin.com, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.com. Stay tuned guys!">
+<meta property="og:description"
+	content="Tampilin.com, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.com. Stay tuned guys!">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://tampilin.com">
 <meta property="og:site_name" content="Tampilin.com">
@@ -43,7 +44,13 @@
 			<li><a href="#">Instagram</a></li>
 		</ul>
 	</div>
-	<div class="about"></div>
+	<div class="loading">
+		<div class="loadingbox">
+			<div class="loadingbar"></div>
+			<div class="loadingtext">Mempersiapkan semuanya...</div>
+		</div>
+		<div class="overlay"></div>
+	</div>
 	<div class="cover">
 		<div class="content">
 			<div class="title">
@@ -104,10 +111,22 @@
 			<div class="wisuda"></div>
 		</div>
 		<div class="talks">
-			<div class="talk1">Cari kerja susah<br/><img src="../images/emoticons/crocodiletears.png" width="32"></img></div>
-			<div class="talk4">Sering lupa bawa <br/> kartu nama <br/><img src="../images/emoticons/sad.png" width="32" height="32"></img></div>
-			<div class="talk3">Belum ada yang <br/>melihat karyaku<br/><img src="../images/emoticons/persons-0033.png" width="32" height="32"></img></div>
-			<div class="talk2">Ingin produkku <br/>lebih dikenal<br/><img src="../images/emoticons/Heart-Eyes.png" width="32" height="32"></img></div>
+			<div class="talk1">
+				Cari kerja susah<br /> <img
+					src="../images/emoticons/crocodiletears.png" width="32"></img>
+			</div>
+			<div class="talk4">
+				Sering lupa bawa <br /> kartu nama <br /> <img
+					src="../images/emoticons/sad.png" width="32" height="32"></img>
+			</div>
+			<div class="talk3">
+				Belum ada yang <br />melihat karyaku<br /> <img
+					src="../images/emoticons/persons-0033.png" width="32" height="32"></img>
+			</div>
+			<div class="talk2">
+				Ingin produkku <br />lebih dikenal<br /> <img
+					src="../images/emoticons/Heart-Eyes.png" width="32" height="32"></img>
+			</div>
 		</div>
 	</div>
 </body>

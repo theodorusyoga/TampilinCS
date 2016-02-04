@@ -6,11 +6,20 @@ $(document)
 				function() {
 					setTeaser();
 					$('.sunmorning').hide();
+					$('.loading').hide();
 					$('.cloud1').hide();
 					$('.cloud2').hide();
 					$('.cloud3').hide();
 					$('.cloud4').hide();
 					$('.caption .main').hover(onHover, unHover);
+					
+					//do load
+					setTimeout(function(){
+						$('.loading').fadeIn('slow');
+						setTimeout(function(){
+							$('.loading').fadeOut('slow');
+						}, 3000);
+					}, 100);
 
 					// open details
 					$('.caption .main')

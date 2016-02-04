@@ -5,6 +5,54 @@ html, body {
 	overflow: hidden;
 }
 
+.loading .overlay {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 99999;
+	opacity: 0.6;
+	background-color: #000000;
+}
+
+.loading .loadingbox {
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 150px;
+	max-height: 150px;
+	background-color: #FF6F6F;
+	z-index: 100000;
+	top: 40%;
+	left: 40%;
+	border-radius: 15px;
+	position: fixed;
+	-webkit-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
+	-moz-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
+	box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
+	padding-top: 2%;
+	padding-left: 1%;
+}
+
+.loading .loadingbox .loadingbar{
+	background-image: url('/images/loading.gif');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-width: 64px;
+	min-height: 64px;
+	max-width: 64px;
+	position: absolute;
+	left: 40%;
+}
+
+.loading .loadingbox .loadingtext{
+	position: absolute;
+	top: 65%;
+	left: 18%;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 16px;
+}
+
 .details {
 	z-index: 2;
 	top: 0px;
@@ -176,12 +224,11 @@ html, body {
 	border-radius: 5px;
 }
 
-.content .title .subinput button:HOVER{
+.content .title .subinput button:HOVER {
 	background: #D1404A;
 	-webkit-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
 	-moz-box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
 	box-shadow: 0px 1px 37px -2px rgba(255, 111, 111, 0.75);
-	
 }
 
 .content .title .subinput input:HOVER {
