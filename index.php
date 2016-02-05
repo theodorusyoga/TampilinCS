@@ -5,13 +5,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
-	content="Tampilin.com, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.com. Stay tuned guys!">
-<meta property="og:title" content="Tampilin.com: Segera Hadir">
+	content="Tampilin.co.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.co.id. Stay tuned guys!">
+<meta property="og:title" content="Tampilin.co.id: Segera Hadir">
 <meta property="og:description"
-	content="Tampilin.com, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.com. Stay tuned guys!">
+	content="Tampilin.co.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.co.id. Stay tuned guys!">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://tampilin.com">
-<meta property="og:site_name" content="Tampilin.com">
+<meta property="og:url" content="http://tampilin.co.id">
+<meta property="og:site_name" content="Tampilin.co.id">
 <meta name="revisit-after" content="30 days">
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
@@ -30,13 +30,16 @@
 <script src="../javascript/jquery.color-2.1.2.min.js"
 	type="text/javascript"></script>
 <script src="../javascript/functions.js" type="text/javascript"></script>
-<title>Coming Soon: Tampilin.com</title>
+<title>Coming Soon: Tampilin.co.id</title>
 </head>
 <body>
 	<div class="warning">
 		<div class="rotateicon"></div>
 		<div class="text">Putar gadgetmu untuk mendapatkan tampilan interaktif
 			dari Tampilin.co.id!</div>
+	</div>
+	<div class="warningmobile">
+		Temukan lebih banyak lagi dengan membuka Tampilin.id di PCmu!
 	</div>
 	<div class="header">
 		<div class="logotitle">
@@ -91,7 +94,8 @@
 		<div class="content">
 			<div class="title">
 				<div class="main">
-					<span>T</span><span>a</span><span>m</span><span>p</span><span>i</span><span>l</span><span>i</span><span>n</span><span>.</span><span>c</span><span>o</span><span>m</span>
+					<div class="logo"></div>
+					<!-- <span>T</span><span>a</span><span>m</span><span>p</span><span>i</span><span>l</span><span>i</span><span>n</span><span>.</span><span>c</span><span>o</span><span>m</span> -->
 				</div>
 				<div class="sub">&#9679;&nbsp;C O M I N G&nbsp;&nbsp;S O O
 					N&nbsp;&#9679;</div>
@@ -105,7 +109,7 @@
 		</div>
 		<div class="caption">
 			<div class="main">
-				<a class="next" href="#opendetails">Apa itu Tampilin.com?</a>
+				<a class="next" href="#opendetails">Apa itu Tampilin.co.id?</a>
 			</div>
 		</div>
 	</div>
@@ -148,7 +152,7 @@
 			<div class="wisuda"></div>
 		</div>
 		<div class="talks">
-			<div class="talk1">
+			<div class="talk3">
 				Cari kerja susah<br /> <img
 					src="../images/emoticons/crocodiletears.png" width="32"></img>
 			</div>
@@ -156,7 +160,7 @@
 				Sering lupa bawa <br /> kartu nama <br /> <img
 					src="../images/emoticons/sad.png" width="32" height="32"></img>
 			</div>
-			<div class="talk3">
+			<div class="talk1">
 				Belum ada yang <br />melihat karyaku<br /> <img
 					src="../images/emoticons/persons-0033.png" width="32" height="32"></img>
 			</div>

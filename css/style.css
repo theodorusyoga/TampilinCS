@@ -5,6 +5,11 @@ html, body {
 	overflow: hidden;
 }
 
+.warningmobile {
+	visibility: hidden;
+	max-height: 0px;
+}
+
 .loading .overlay {
 	position: fixed;
 	min-width: 100%;
@@ -162,6 +167,7 @@ html, body {
 
 .warning {
 	visibility: hidden;
+	max-height: 0px;
 }
 
 .loading .loadingbox {
@@ -175,51 +181,13 @@ html, body {
 	position: fixed;
 	top: 37%;
 	left: 37%;
+	text-align: center;
 	-webkit-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	-moz-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	padding-top: 2%;
 	padding-left: 1%;
-}
-
-/* MEDIA */
-@media only screen and (min-width: 100px) and (max-width: 620px) {
-	.cover, .header, .about {
-		visibility: hidden;
-	}
-	.loading .loadingbox {
-		left: 10%;
-		top: 30%;
-	}
-	.warning {
-		visibility: visible;
-		position: fixed;
-		background: #000000;
-		opacity: 0.8;
-		min-width: 100%;
-		min-height: 100%;
-	}
-	.warning .text {
-		color: #FFFFFF;
-		max-width: 250px;
-		text-align: center;
-		top: 40%;
-		position: absolute;
-		left: 15%;
-		font-size: 26px;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-weight: bold;
-	}
-	.rotateicon {
-		background-image: url('/images/rotate.png');
-		min-width: 300px;
-		min-height: 200px;
-		background-repeat: no-repeat;
-		background-size: 50% auto;
-		left: 30%;
-		position: absolute;
-		top: 10%;
-	}
+	-webkit-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 }
 
 .loading .loadingbox .loadingbar {
@@ -236,7 +204,6 @@ html, body {
 .loading .loadingbox .loadingtext {
 	position: absolute;
 	top: 65%;
-	left: 18%;
 	color: #FFFFFF;
 	font-weight: lighter;
 	font-family: 'Hind Vadodara', sans-serif;
@@ -361,6 +328,15 @@ html, body {
 	font-size: 80px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.content .title .main .logo {
+	background-image: url('/images/tampilin_white_red.png');
+	background-repeat: no-repeat;
+	background-size: 30% auto;
+	min-width: 300px;
+	min-height: 150px;
+	background-position: center top;
 }
 
 .content .title .main span {
@@ -949,6 +925,7 @@ html, body {
 }
 
 .talks .talk1 {
+	font-size: 18px;
 	z-index: 51;
 	background: url('/images/characters/Omongan.png') no-repeat;
 	background-size: 100% auto;
@@ -960,7 +937,7 @@ html, body {
 	bottom: 0px;
 	top: 200px;
 	text-align: center;
-	padding-top: 2.5%;
+	padding-top: 2%;
 	left: -400px;
 }
 
@@ -994,7 +971,7 @@ html, body {
 	bottom: 0px;
 	top: 200px;
 	text-align: center;
-	padding-top: 2%;
+	padding-top: 2.5%;
 	left: 1400px;
 }
 
@@ -1016,3 +993,127 @@ html, body {
 }
 
 /* END DETAILS SECTION */
+
+/* MEDIA */
+@media only screen and (min-width: 100px) and (max-width: 620px) {
+	.cover, .header, .about {
+		visibility: hidden;
+	}
+	.loading .loadingbox {
+		left: 10%;
+		top: 30%;
+	}
+	.warning {
+		visibility: visible;
+		position: fixed;
+		background: #000000;
+		opacity: 0.8;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.warning .text {
+		color: #FFFFFF;
+		max-width: 250px;
+		text-align: center;
+		top: 40%;
+		position: absolute;
+		left: 15%;
+		font-size: 26px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: bold;
+	}
+	.rotateicon {
+		background-image: url('/images/rotate.png');
+		min-width: 300px;
+		min-height: 200px;
+		background-repeat: no-repeat;
+		background-size: 50% auto;
+		left: 30%;
+		position: absolute;
+		top: 10%;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+	.header {
+		max-height: 30px;
+	}
+	.header a {
+		font-size: 10px;
+	}
+	.header ul {
+		margin-top: 0px;
+	}
+	.content .title .main .logo {
+		min-height: 75px;
+	}
+	.content .title .sub {
+		font-size: 30px;
+	}
+	.caption {
+		font-size: 12px;
+	}
+	.caption .main {
+		border-width: 20px 125px 20px 40px;
+	}
+	.caption .main a {
+		margin-left: 3%;
+	}
+	.content .title .subdate {
+		font-size: 24px;
+	}
+	.content .title .subinput input, button {
+		min-height: 20px;
+		font-size: 14px;
+	}
+	.content .title .subinput button {
+		font-size: 13px;
+		max-height: 30px;
+	}
+	.loading .loadingbox {
+		top: 30%;
+		left: 27%;
+	}
+	.loading .loadingbox .loadingtext {
+		left: 17%;
+	}
+	.caption .main:HOVER {
+		border-top: 20px solid #D1404A;
+		border-bottom: 20px solid #D1404A;
+		border-right: 125px solid #D1404A;
+		margin-top: -1%;
+	}
+	.warningmobile {
+		visibility: visible;
+		background-color: rgb(255, 111, 111);
+		color: rgb(255, 255, 255);
+		margin-top: 0px;
+		font-size: 12px;
+		padding-left: 2%;
+		min-height: 20px;
+		padding-top: 0.5%;
+		font-family: 'Hind Vadodara', sans-serif;
+	}
+	.caption {
+		visibility: hidden;
+	}
+	.about .aboutbox .abouttitle {
+		font-size: 30px;
+	}
+	.about .aboutbox .characters {
+		padding-top: 14%;
+	}
+	.characters .character1, .character2, .character3, .character4 {
+		min-width: 100px;
+		min-height: 100px;
+	}
+	.about .aboutbox .descriptions{
+		font-size: 30px;
+	}
+	.descriptions .desc{
+		min-width: 100px;
+	}
+	.loading .loadingbox .loadingtext{
+		top: 55%;
+	}
+}

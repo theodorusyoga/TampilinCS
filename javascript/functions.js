@@ -11,7 +11,7 @@ $(window)
 				function() {
 					setTeaser();
 					$('.sunmorning').hide();
-					/*$('.loading').hide();*/
+					/* $('.loading').hide(); */
 					$('.cloud1').hide();
 					$('.cloud2').hide();
 					$('.cloud3').hide();
@@ -97,12 +97,12 @@ $(window)
 											left : "-2000",
 										}, 1000);
 										setTimeout(function() {
-											$('.content .title .main').animate(
-													{
-														fontSize : '38'
+											$('.content .title .main .logo')
+													.animate({
+														backgroundSize : '10%'
 													}, 750);
 											$('.content').animate({
-												top: '-18.5%',	
+												top : '-18.5%',
 												left : '120%'
 											}, 500);
 										}, 100);
@@ -192,10 +192,12 @@ $(window)
 															clearInterval(changeColor);
 															$('.next')
 																	.html(
-																			'Apa itu Tampilin.com?');
-															$('.cover').css('z-index','52');
+																			'Apa itu Tampilin.co.id?');
+															$('.cover').css(
+																	'z-index',
+																	'52');
 														}, 1000);
-										
+
 									});
 
 					// close details
@@ -243,7 +245,7 @@ $(window)
 																	.animate(
 																			{
 																				left : '0',
-																				top: '0'
+																				top : '0'
 																			},
 																			500);
 															$(
@@ -289,10 +291,12 @@ $(window)
 																	.html(
 																			'< Kembali');
 															setTeaser();
-															$('.cover').css('z-index','48');
+															$('.cover').css(
+																	'z-index',
+																	'48');
 															window.location
 																	.reload();
-															
+
 															clearInterval(changeColor);
 														}, 3000);
 									});
@@ -758,23 +762,26 @@ function setTeaser() {
 		}, 500);
 		clearInterval(firsttime);
 	}, 1000);
-	interval = window.setInterval(function() {
-		$('.cover').animate({
-			left : "-50",
-		}, 500);
-		$('.header .headeroverlay').animate({
-			opacity : "0.9"
-		}, 500);
-		interval2 = window.setInterval(function() {
+	var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+	if (width > 900) {
+		interval = window.setInterval(function() {
 			$('.cover').animate({
-				left : "0",
-			}, 1000);
+				left : "-50",
+			}, 500);
 			$('.header .headeroverlay').animate({
-				opacity : "0.6"
-			}, 1000);
-			clearInterval(interval2);
-		}, 500);
-	}, 4000);
+				opacity : "0.9"
+			}, 500);
+			interval2 = window.setInterval(function() {
+				$('.cover').animate({
+					left : "0",
+				}, 1000);
+				$('.header .headeroverlay').animate({
+					opacity : "0.6"
+				}, 1000);
+				clearInterval(interval2);
+			}, 500);
+		}, 4000);
+	}
 }
 
 // ajax
@@ -793,7 +800,8 @@ function sendEmail() {
 				if (xmlhr.responseText == '1') {
 					$('.loadingtext')
 							.html(
-									'Kamu sudah terdaftar! <br/>Tunggu email dari kami untuk berita berikutnya&nbsp;<img src="../images/emoticons/heart_400.png" width="32"></img>')
+									'Kamu sudah terdaftar! Tunggu email dari kami untuk berita berikutnya&nbsp;<img src="../images/emoticons/heart_400.png" width="32"></img>')
+					$('.loadingtext').css('font-size', '14px');
 					$('.loadingbar').css('background-image',
 							"url('/images/ok-white.png')");
 					setTimeout(function() {
