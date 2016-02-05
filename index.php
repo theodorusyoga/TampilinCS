@@ -5,13 +5,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
-	content="Tampilin.co.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.co.id. Stay tuned guys!">
-<meta property="og:title" content="Tampilin.co.id: Segera Hadir">
+	content="Tampilin.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.id. Stay tuned guys!">
+<meta property="og:title" content="Tampilin.id: Segera Hadir">
 <meta property="og:description"
-	content="Tampilin.co.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.co.id. Stay tuned guys!">
+	content="Tampilin.id, segera hadir di Indonesia. Buat kamu yang ingin cari kerja, daganganmu tampil lebih cantik, ingin karyamu dikenal orang, bahkan sampai ingin cari jodoh, semuanya ada di Tampilin.id. Stay tuned guys!">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://tampilin.co.id">
-<meta property="og:site_name" content="Tampilin.co.id">
+<meta property="og:url" content="http://tampilin.id">
+<meta property="og:site_name" content="Tampilin.id">
 <meta name="revisit-after" content="30 days">
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
@@ -34,21 +34,19 @@
 <script src="../javascript/jquery.color-2.1.2.min.js"
 	type="text/javascript"></script>
 <script src="../javascript/functions.js" type="text/javascript"></script>
-<title>Coming Soon: Tampilin.co.id</title>
+<title>Coming Soon: Tampilin.id</title>
 </head>
 <body>
 	<div class="warning">
 		<div class="rotateicon"></div>
 		<div class="text">Putar gadgetmu untuk mendapatkan tampilan interaktif
-			dari Tampilin.co.id!</div>
+			dari Tampilin.id!</div>
 	</div>
 	<div class="warningmobile">
 		Temukan lebih banyak lagi dengan membuka Tampilin.id di PCmu!
 	</div>
 	<div class="header">
 		<div class="logotitle">
-			<!-- <img src="/images/insert-img.png"></img> -->
-			<!-- <p class="title">Tampilin.com</p> -->
 		</div>
 		<div class="headeroverlay"></div>
 		<ul>
@@ -60,7 +58,7 @@
 	<div class="loading">
 		<div class="loadingbox">
 			<div class="loadingbar"></div>
-			<div class="loadingtext">Mempersiapkan semuanya...</div>
+			<div class="loadingtext"></div>
 		</div>
 		<div class="overlay"></div>
 	</div>
@@ -113,7 +111,7 @@
 		</div>
 		<div class="caption">
 			<div class="main">
-				<a class="next" href="#opendetails">Apa itu Tampilin.co.id?</a>
+				<a class="next" href="#opendetails">Apa itu Tampilin.id?</a>
 			</div>
 		</div>
 	</div>

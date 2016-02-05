@@ -16,6 +16,7 @@ $(window)
 					$('.cloud2').hide();
 					$('.cloud3').hide();
 					$('.cloud4').hide();
+					$('.about').css('visibility', 'visible');
 					$('.about').hide();
 					$('.caption .main').hover(onHover, unHover);
 
@@ -192,7 +193,7 @@ $(window)
 															clearInterval(changeColor);
 															$('.next')
 																	.html(
-																			'Apa itu Tampilin.co.id?');
+																			'Apa itu Tampilin.id?');
 															$('.cover').css(
 																	'z-index',
 																	'52');

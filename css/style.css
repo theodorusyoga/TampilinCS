@@ -19,6 +19,10 @@ html, body {
 	background-color: #000000;
 }
 
+.about{
+	visibility: hidden;
+}
+
 .about .overlay {
 	position: fixed;
 	min-width: 100%;
