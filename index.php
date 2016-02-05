@@ -16,6 +16,10 @@
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
 <!-- GOOGLE FONTS -->
+<link rel="shortcut icon" type="image/x-icon"
+	href="http://tampilin-local.com/images/icon.ico" />
+	<link rel="shortcut icon" type="image/png"
+	href="images/icon.png" />
 <link
 	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
 	rel='stylesheet' type='text/css'>
