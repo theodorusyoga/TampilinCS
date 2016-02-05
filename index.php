@@ -39,15 +39,45 @@
 		</div>
 		<div class="headeroverlay"></div>
 		<ul>
-			<li><a href="#">Tentang Kami</a></li>
-			<li><a href="#">Facebook Page</a></li>
-			<li><a href="#">Instagram</a></li>
+			<li><a id="aboutlink" href="#">Tentang Kami</a></li>
+			<li><a href="https://www.facebook.com/tampilin" target="_blank">Facebook</a></li>
+			<li><a href="https://www.instagram.com/tampilin/" target="_blank">Instagram</a></li>
 		</ul>
 	</div>
 	<div class="loading">
 		<div class="loadingbox">
 			<div class="loadingbar"></div>
 			<div class="loadingtext">Mempersiapkan semuanya...</div>
+		</div>
+		<div class="overlay"></div>
+	</div>
+	<div class="about">
+		<div class="aboutclose">
+			<div class="close"></div>
+		</div>
+		<div class="aboutbox">
+			<div class="abouttitle">Kami adalah kucing-kucing yang akan
+				menyelamatkan dunia!</div>
+			<div class="characters">
+				<div class="character1">
+					<div class="pic1"></div>
+				</div>
+				<div class="character2">
+					<div class="pic2"></div>
+				</div>
+				<div class="character3">
+					<div class="pic3"></div>
+				</div>
+				<div class="character4">
+					<div class="pic4"></div>
+				</div>
+			</div>
+			<div class="descriptions">
+				<div class="desc">Black</div>
+				<div class="desc">Brown</div>
+				<div class="desc">Grey</div>
+				<div class="desc">White</div>
+			</div>
 		</div>
 		<div class="overlay"></div>
 	</div>
@@ -61,7 +91,8 @@
 					N&nbsp;&#9679;</div>
 				<div class="subdate">We're still working on it!</div>
 				<div class="subinput">
-					<input id="emailtb" type="text" placeholder="Masukkan emailmu di sini"></input>
+					<input id="emailtb" type="text"
+						placeholder="Masukkan emailmu di sini"></input><br/>
 					<button id="submitbtn">Kabari saya jika sudah tersedia!</button>
 				</div>
 			</div>

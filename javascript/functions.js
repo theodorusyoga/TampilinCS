@@ -16,6 +16,7 @@ $(window)
 					$('.cloud2').hide();
 					$('.cloud3').hide();
 					$('.cloud4').hide();
+					$('.about').hide();
 					$('.caption .main').hover(onHover, unHover);
 
 					// do load
@@ -23,9 +24,52 @@ $(window)
 						$('.loading').fadeOut('slow');
 					}, 100);
 
-					$('#submitbtn').click(function(){
+					$('#submitbtn').click(function() {
 						sendEmail();
 					});
+
+					$('#aboutlink').click(function() {
+						$('.about').fadeIn('fast');
+						var time = getRandomInt(500, 1500);
+						$('.character1').animate({
+							bottom : '0'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character2').animate({
+							bottom : '0'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character3').animate({
+							bottom : '0'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character4').animate({
+							bottom : '0'
+						}, time);
+					});
+
+					$('.about .aboutclose .close').click(function() {
+						var time = getRandomInt(500, 1500);
+						$('.character1').animate({
+							bottom : '500'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character2').animate({
+							bottom : '500'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character3').animate({
+							bottom : '500'
+						}, time);
+						time = getRandomInt(500, 1500);
+						$('.character4').animate({
+							bottom : '500'
+						}, time);
+						setTimeout(function() {
+							$('.about').fadeOut('fast');
+						}, 1000);
+					});
+
 					// open details
 					$('.caption .main')
 							.click(
@@ -48,14 +92,20 @@ $(window)
 												'visibility', 'hidden');
 										$('.content .title .subinput').css(
 												'visibility', 'hidden');
-										$('.content .title .main').animate({
-											fontSize : '38',
-											marginTop : '-27%',
-											marginLeft : '-220%'
-										}, 750);
+
 										$('.cover').animate({
 											left : "-2000",
 										}, 1000);
+										setTimeout(function() {
+											$('.content .title .main').animate(
+													{
+														fontSize : '38'
+													}, 750);
+											$('.content').animate({
+												top: '-18.5%',	
+												left : '120%'
+											}, 500);
+										}, 100);
 										$('.header .headeroverlay').animate({
 											opacity : "0.9",
 										}, 500);
@@ -143,7 +193,9 @@ $(window)
 															$('.next')
 																	.html(
 																			'Apa itu Tampilin.com?');
-														}, 750);
+															$('.cover').css('z-index','52');
+														}, 1000);
+										
 									});
 
 					// close details
@@ -187,15 +239,21 @@ $(window)
 																	.css(
 																			'visibility',
 																			'visible');
+															$('.content')
+																	.animate(
+																			{
+																				left : '0',
+																				top: '0'
+																			},
+																			500);
 															$(
 																	'.content .title .main')
 																	.animate(
 																			{
-																				fontSize : '80',
-																				marginTop : '0',
-																				marginLeft : '0'
+																				fontSize : '80'
 																			},
 																			500);
+
 															$(
 																	'.content .title .main')
 																	.css(
@@ -231,8 +289,10 @@ $(window)
 																	.html(
 																			'< Kembali');
 															setTeaser();
+															$('.cover').css('z-index','48');
 															window.location
 																	.reload();
+															
 															clearInterval(changeColor);
 														}, 3000);
 									});
@@ -717,30 +777,34 @@ function setTeaser() {
 	}, 4000);
 }
 
-//ajax
+// ajax
 var url = 'http://tampilin-local.com/';
 
-function sendEmail(){
+function sendEmail() {
 	$('.loadingbar').show();
 	$('.loadingtext').html('Mendaftarkan email...	');
 	$('.loadingbar').css('background-image', "url('/images/loading.gif')");
 	$('.loading').fadeIn('slow');
 	var xmlhr = new XMLHttpRequest();
-	xmlhr.open('POST', url
-			+ '/functions/registerEmail.php', true);
-	xmlhr.onload = function(e){
-		if(xmlhr.readyState == 4){
-			if(xmlhr.status == 200){
-				if(xmlhr.responseText == '1'){
-					$('.loadingtext').html('Kamu sudah terdaftar! <br/>Tunggu email dari kami untuk berita berikutnya&nbsp;<img src="../images/emoticons/heart_400.png" width="32"></img>')
-					$('.loadingbar').css('background-image', "url('/images/ok-white.png')");
-					setTimeout(function(){
+	xmlhr.open('POST', url + '/functions/registerEmail.php', true);
+	xmlhr.onload = function(e) {
+		if (xmlhr.readyState == 4) {
+			if (xmlhr.status == 200) {
+				if (xmlhr.responseText == '1') {
+					$('.loadingtext')
+							.html(
+									'Kamu sudah terdaftar! <br/>Tunggu email dari kami untuk berita berikutnya&nbsp;<img src="../images/emoticons/heart_400.png" width="32"></img>')
+					$('.loadingbar').css('background-image',
+							"url('/images/ok-white.png')");
+					setTimeout(function() {
 						$('.loading').fadeOut('slow');
 					}, 2000);
-				}
-				else{
-					$('.loadingtext').html('Ups! Kamu masih belum berhasil mendaftar. Coba refresh halaman ini dulu&nbsp;<img src="../images/emoticons/persons-0006_large.png" width="32"></img>')
-					$('.loadingbar').css('background-image', "url('/images/error-white.png')");
+				} else {
+					$('.loadingtext')
+							.html(
+									'Ups! Kamu masih belum berhasil mendaftar. Coba refresh halaman ini dulu&nbsp;<img src="../images/emoticons/persons-0006_large.png" width="32"></img>')
+					$('.loadingbar').css('background-image',
+							"url('/images/error-white.png')");
 				}
 			}
 		}
