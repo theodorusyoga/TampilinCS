@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
@@ -32,6 +33,11 @@
 <title>Coming Soon: Tampilin.com</title>
 </head>
 <body>
+	<div class="warning">
+		<div class="rotateicon"></div>
+		<div class="text">Putar gadgetmu untuk mendapatkan tampilan interaktif
+			dari Tampilin.co.id!</div>
+	</div>
 	<div class="header">
 		<div class="logotitle">
 			<!-- <img src="/images/insert-img.png"></img> -->
@@ -92,7 +98,7 @@
 				<div class="subdate">We're still working on it!</div>
 				<div class="subinput">
 					<input id="emailtb" type="text"
-						placeholder="Masukkan emailmu di sini"></input><br/>
+						placeholder="Masukkan emailmu di sini"></input><br />
 					<button id="submitbtn">Kabari saya jika sudah tersedia!</button>
 				</div>
 			</div>

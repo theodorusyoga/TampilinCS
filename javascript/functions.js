@@ -11,7 +11,7 @@ $(window)
 				function() {
 					setTeaser();
 					$('.sunmorning').hide();
-					$('.loading').hide();
+					/*$('.loading').hide();*/
 					$('.cloud1').hide();
 					$('.cloud2').hide();
 					$('.cloud3').hide();

@@ -160,6 +160,10 @@ html, body {
 	position: relative;
 }
 
+.warning {
+	visibility: hidden;
+}
+
 .loading .loadingbox {
 	min-width: 300px;
 	max-width: 300px;
@@ -167,15 +171,55 @@ html, body {
 	max-height: 150px;
 	background-color: #FF6F6F;
 	z-index: 100000;
-	top: 40%;
-	left: 40%;
 	border-radius: 15px;
 	position: fixed;
+	top: 37%;
+	left: 37%;
 	-webkit-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	-moz-box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	box-shadow: 3px 5px 63px 12px rgba(255, 111, 111, 1);
 	padding-top: 2%;
 	padding-left: 1%;
+}
+
+/* MEDIA */
+@media only screen and (min-width: 100px) and (max-width: 620px) {
+	.cover, .header, .about {
+		visibility: hidden;
+	}
+	.loading .loadingbox {
+		left: 10%;
+		top: 30%;
+	}
+	.warning {
+		visibility: visible;
+		position: fixed;
+		background: #000000;
+		opacity: 0.8;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.warning .text {
+		color: #FFFFFF;
+		max-width: 250px;
+		text-align: center;
+		top: 40%;
+		position: absolute;
+		left: 15%;
+		font-size: 26px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: bold;
+	}
+	.rotateicon {
+		background-image: url('/images/rotate.png');
+		min-width: 300px;
+		min-height: 200px;
+		background-repeat: no-repeat;
+		background-size: 50% auto;
+		left: 30%;
+		position: absolute;
+		top: 10%;
+	}
 }
 
 .loading .loadingbox .loadingbar {
@@ -309,7 +353,7 @@ html, body {
 
 .content .title {
 	position: relative;
-	max-height: 100px;	
+	max-height: 100px;
 }
 
 .content .title .main {
