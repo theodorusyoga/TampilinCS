@@ -216,9 +216,12 @@ $(window)
 										$('.cloud3').hide();
 										$('.cloud4').hide();
 										hideBuildings();
-										$('.cover').animate({
-											left : "0",
-										}, 1000);
+										setTimeout(function() {
+											$('.cover').animate({
+												left : "0",
+											}, 1000);
+										}, 3000);
+
 										$('.header .headeroverlay').animate({
 											opacity : "0.6",
 										}, 500);
@@ -308,42 +311,42 @@ function animateBuildings() {
 	/* BUILDINGS */
 	var func1 = window.setInterval(function() {
 		$('.rumahijo').animate({
-			top : '400'
+			bottom : '0'
 		}, 400);
 		clearInterval(func1);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func2 = window.setInterval(function() {
 		$('.rumahbiru').animate({
-			top : '400'
+			bottom : '0'
 		}, 400);
 		clearInterval(func2);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func3 = window.setInterval(function() {
 		$('.rumahroti').animate({
-			top : '400'
+			bottom : '0'
 		}, 400);
 		clearInterval(func3);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func4 = window.setInterval(function() {
 		$('.rumahpizza').animate({
-			top : '400'
+			bottom : '0'
 		}, 400);
 		clearInterval(func4);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func5 = window.setInterval(function() {
 		$('.rumahkecil').animate({
-			top : '400'
+			bottom : '0'
 		}, 400);
 		clearInterval(func5);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func6 = window.setInterval(function() {
 		$('.tugu').animate({
-			top : '325'
+			bottom : '0'
 		}, 400);
 		clearInterval(func6);
 	}, time);
@@ -352,14 +355,14 @@ function animateBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func13 = window.setInterval(function() {
 		$('.worker').animate({
-			top : '345'
+			bottom : '0'
 		}, 400);
 		clearInterval(func13);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func14 = window.setInterval(function() {
 		$('.traveler').animate({
-			top : '345'
+			bottom : '0'
 		}, 400);
 		clearInterval(func14);
 	}, time);
@@ -372,7 +375,7 @@ function animateBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func16 = window.setInterval(function() {
 		$('.bossy').animate({
-			top : '360'
+			bottom : '0'
 		}, 400);
 		clearInterval(func16);
 	}, time);
@@ -385,7 +388,7 @@ function animateBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func18 = window.setInterval(function() {
 		$('.baker').animate({
-			top : '350'
+			bottom : '0'
 		}, 400);
 		clearInterval(func18);
 	}, time);
@@ -398,7 +401,7 @@ function animateBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func20 = window.setInterval(function() {
 		$('.wisuda').animate({
-			top : '335'
+			bottom : '0'
 		}, 400);
 		clearInterval(func20);
 	}, time);
@@ -408,47 +411,61 @@ function animateBuildings() {
 		}, 400);
 		clearInterval(func21);
 	}, time);
+	time = getRandomInt(1000, 2000);
+	var func22 = window.setInterval(function() {
+		$('.tree1').animate({
+			bottom : '0'
+		}, 400);
+		clearInterval(func22);
+	}, time);
+	time = getRandomInt(1000, 2000);
+	var func23 = window.setInterval(function() {
+		$('.tree2').animate({
+			bottom : '0'
+		}, 400);
+		clearInterval(func23);
+	}, time);
 
 	/* SHADOWS */
 	time = getRandomInt(2000, 2500);
 	var func7 = window.setInterval(function() {
 		$('.gedung1').animate({
-			top : '200'
+			top : '0'
 		}, 400);
 		clearInterval(func7);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func8 = window.setInterval(function() {
 		$('.gedung2').animate({
-			top : '250'
+			top : '0'
 		}, 400);
 		clearInterval(func8);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func9 = window.setInterval(function() {
 		$('.gedung3').animate({
-			top : '200'
+			top : '0'
 		}, 400);
 		clearInterval(func9);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func10 = window.setInterval(function() {
 		$('.gedung4').animate({
-			top : '200'
+			top : '0'
 		}, 400);
 		clearInterval(func10);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func11 = window.setInterval(function() {
 		$('.gedung5').animate({
-			top : '200'
+			top : '0'
 		}, 400);
 		clearInterval(func11);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func12 = window.setInterval(function() {
 		$('.gedung6').animate({
-			top : '200'
+			top : '0'
 		}, 400);
 		clearInterval(func12);
 	}, time);
@@ -459,42 +476,42 @@ function hideBuildings() {
 	/* BUILDINGS */
 	var func1 = window.setInterval(function() {
 		$('.rumahijo').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func1);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func2 = window.setInterval(function() {
 		$('.rumahbiru').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func2);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func3 = window.setInterval(function() {
 		$('.rumahroti').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func3);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func4 = window.setInterval(function() {
 		$('.rumahpizza').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func4);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func5 = window.setInterval(function() {
 		$('.rumahkecil').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func5);
 	}, time);
 	time = getRandomInt(2000, 2500);
 	var func6 = window.setInterval(function() {
 		$('.tugu').animate({
-			top : '700'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func6);
 	}, time);
@@ -503,14 +520,14 @@ function hideBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func13 = window.setInterval(function() {
 		$('.worker').animate({
-			top : '900'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func13);
 	}, time);
 	time = getRandomInt(1000, 2000);
 	var func14 = window.setInterval(function() {
 		$('.traveler').animate({
-			top : '900'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func14);
 	}, time);
@@ -523,7 +540,7 @@ function hideBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func16 = window.setInterval(function() {
 		$('.bossy').animate({
-			top : '900'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func16);
 	}, time);
@@ -536,7 +553,7 @@ function hideBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func18 = window.setInterval(function() {
 		$('.baker').animate({
-			top : '900'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func18);
 	}, time);
@@ -549,7 +566,7 @@ function hideBuildings() {
 	time = getRandomInt(1000, 2000);
 	var func20 = window.setInterval(function() {
 		$('.wisuda').animate({
-			top : '900'
+			bottom : '1400'
 		}, 400);
 		clearInterval(func20);
 	}, time);

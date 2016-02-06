@@ -19,7 +19,7 @@ html, body {
 	background-color: #000000;
 }
 
-.about{
+.about {
 	visibility: hidden;
 }
 
@@ -169,11 +169,10 @@ html, body {
 	position: relative;
 }
 
-.warning {
+/* .warning {
 	visibility: hidden;
 	max-height: 0px;
-}
-
+} */
 .loading .loadingbox {
 	min-width: 300px;
 	max-width: 300px;
@@ -590,104 +589,109 @@ html, body {
 
 .buildings {
 	z-index: 3;
-	min-height: 300px;
 	min-width: 100%;
 	padding-top: 31%;
 	padding-left: 12.5%;
 	padding-bottom: 0%;
 	margin-bottom: 0px;
+	padding-right: 12.5px;
 	bottom: 0px;
 	top: 0px;
 	position: absolute;
+	bottom: 0px;
 }
 
 .buildings .rumahijo {
 	z-index: 40;
 	background-image: url('/images/morning/Rumah ijo.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 170px;
-	height: 350px;
+	min-width: 13%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	top: 700px;
+	position: relative;
 	background-size: 100% auto;
+	display: inline-block;
+	bottom: 1400px;
 }
 
 .buildings .rumahbiru {
 	z-index: 42;
 	background-image: url('/images/morning/Rumah biru.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 185px;
-	height: 350px;
+	min-width: 14%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	left: 23%;
-	top: 700px;
+	position: relative;
 	background-size: 100% auto;
+	bottom: 1400px;
 }
 
 .buildings .rumahpizza {
 	z-index: 43;
 	background-image: url('/images/morning/Rumah Pizza.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 200px;
-	height: 350px;
+	min-width: 16%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	left: 56%;
-	top: 700px;
+	position: relative;
 	background-size: 100% auto;
+	display: inline-block;
+	left: -4%;
+	bottom: 1400px;
 }
 
 .buildings .rumahroti {
 	z-index: 41;
 	background-image: url('/images/morning/Rumah roti.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 290px;
-	height: 350px;
+	min-width: 22%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	left: 36%;
-	top: 700px;
+	position: relative;
 	background-size: 100% auto;
+	display: inline-block;
+	left: -30px;
+	bottom: 1400px;
 }
 
 .buildings .rumahkecil {
 	z-index: 41;
 	background-image: url('/images/morning/Rumah kecil.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 130px;
-	height: 200px;
+	min-width: 10%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	left: 70%;
-	top: 700px;
+	position: relative;
 	background-size: 100% auto;
+	display: inline-block;
+	left: -4%;
+	bottom: 1400px;
 }
 
 .buildings .tugu {
 	z-index: 41;
 	background: url('/images/morning/Tugu.png') no-repeat;
-	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 130px;
-	bottom: 0px;
-	top: 45%;
-	height: 200px;
+	min-width: 7%;
+	margin-bottom: 0px;
 	display: inline-block;
-	position: absolute;
-	left: 77%;
-	top: 700px;
+	position: relative;
+	background-size: 100% auto;
+	display: inline-block;
+	left: -5%;
+	bottom: 1400px;
 }
 
 .shadows {
@@ -697,218 +701,190 @@ html, body {
 	padding-top: 20%;
 	padding-left: 12.5%;
 	padding-bottom: 0%;
+	padding-right: 12.5%;
 	margin-bottom: 0px;
 	bottom: 0px;
 	top: 0px;
 	position: absolute;
+	margin-bottom: 0px;
 }
 
 .shadows .gedung1 {
 	z-index: 31;
-	background-image: url('/images/morning/Gedung1.png');
+	background-image: url("/images/morning/Gedung1.png");
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 100px;
-	bottom: 0px;
-	top: 30%;
-	height: 350px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	min-width: 6%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .shadows .gedung2 {
 	z-index: 32;
-	background-image: url('/images/morning/Gedung2.png');
+	background-image: url("/images/morning/Gedung2.png");
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 175px;
-	bottom: 0px;
-	top: 40%;
-	margin-top: 7.5%;
-	height: 325px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
-	left: 17.5%;
+	left: 0px;
+	bottom: 0px;
+	min-width: 17%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .shadows .gedung3 {
 	z-index: 34;
 	background-image: url('/images/morning/Gedung3.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 150px;
-	margin-top: 9%;
-	height: 325px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
-	left: 30%;
+	left: 0px;
+	bottom: 0px;
+	min-width: 13%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .shadows .gedung4 {
 	z-index: 33;
 	background-image: url('/images/morning/Gedung bayangan.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 175px;
-	margin-top: 6%;
-	height: 325px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
-	left: 38%;
+	left: 0px;
+	bottom: 0px;
+	min-width: 15%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .shadows .gedung5 {
 	z-index: 32;
-	background-image: url('/images/morning/Gedung2.png');
+	background-image: url('/images/morning/Gedung1.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 200px;
-	margin-top: 7.5%;
-	height: 325px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
-	left: 50%;
+	left: 0px;
+	bottom: 0px;
+	min-width: 6%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .shadows .gedung6 {
 	z-index: 34;
 	background-image: url('/images/morning/Gedung3.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
 	min-height: 100%;
-	min-width: 190px;
-	margin-top: 2%;
-	height: 325px;
+	position: relative;
 	display: inline-block;
-	position: absolute;
-	left: 64%;
+	left: 0px;
+	bottom: 0px;
+	min-width: 15%;
+	background-size: auto 100%;
 	top: 900px;
-	background-size: 100% auto;
 }
 
 .sprites {
 	z-index: 4;
 	min-height: 300px;
 	min-width: 100%;
-	padding-top: 31%;
+	padding-top: 24%;
 	padding-left: 12.5%;
+	padding-right: 12.5%;
 	padding-bottom: 0%;
 	margin-bottom: 0px;
 	bottom: 0px;
 	top: 0px;
 	position: absolute;
+	padding-bottom: 0%;
 }
 
 .sprites .worker {
 	z-index: 40;
 	background: url('/images/characters/worker.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 80px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 900px;
+	position: relative;
+	bottom: 1400px;
 }
 
 .sprites .traveler {
 	z-index: 40;
 	background: url('/images/characters/Traveler.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 95px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 900px;
-	left: 300px;
+	position: relative;
+	bottom: 1400px;
 }
 
 .sprites .tree1 {
 	z-index: 40;
 	background: url('/images/characters/Pohon.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 70%;
 	min-height: 100%;
-	min-width: 95px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 440px;
-	left: 410px;
+	position: relative;
+	bottom: 1400px;
+	background-position: center bottom;
 }
 
 .sprites .tree2 {
 	z-index: 40;
 	background: url('/images/characters/Pohon.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 70%;
 	min-height: 100%;
-	min-width: 95px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 440px;
-	left: 820px;
+	position: relative;
+	bottom: 1400px;
+	background-position: center bottom;
 }
 
 .sprites .bossy {
 	z-index: 40;
 	background: url('/images/characters/Bossy.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 95px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 900px;
-	left: 550px;
+	position: relative;
+	bottom: 1400px;
 }
 
 .sprites .baker {
 	z-index: 40;
 	background: url('/images/characters/baker.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 85px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 900px;
-	left: 700px;
+	position: relative;
+	bottom: 1400px;
 }
 
 .sprites .wisuda {
 	z-index: 40;
 	background: url('/images/characters/wisuda.png') no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	min-height: 100%;
-	min-width: 90px;
-	height: 325px;
+	min-width: 10%;
 	display: inline-block;
-	position: absolute;
-	bottom: 0px;
-	top: 900px;
-	left: 950px;
+	position: relative;
+	bottom: 1400px;
 }
 
 .talks {
@@ -1000,14 +976,14 @@ html, body {
 
 /* MEDIA */
 @media only screen and (min-width: 100px) and (max-width: 620px) {
-	.cover, .header, .about {
+	/* .cover, .header, .about {
 		visibility: hidden;
-	}
+	} */
 	.loading .loadingbox {
 		left: 10%;
 		top: 30%;
 	}
-	.warning {
+	/* .warning {
 		visibility: visible;
 		position: fixed;
 		background: #000000;
@@ -1035,6 +1011,55 @@ html, body {
 		left: 30%;
 		position: absolute;
 		top: 10%;
+	} */
+	.cover {
+		background-size: auto 100%;
+		background-position: center;
+	}
+	.header {
+		max-height: 40px;
+	}
+	.header ul {
+		margin-left: 0px;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 0px;
+		text-align: center;
+		margin-top: 2%;
+	}
+	.caption {
+		visibility: hidden;
+	}
+	.content .title .main .logo {
+		background-size: 70% auto;
+		min-height: 75px;
+	}
+	.content .title .sub {
+		font-size: 32px;
+	}
+	.content .title .subdate {
+		font-size: 28px;
+	}
+	.content .title .subinput input {
+		min-width: 90%;
+		max-width: 90%;
+	}
+	.content .title .subinput button {
+		min-width: 92%;
+		max-width: 92%;
+	}
+	.about .aboutbox .descriptions {
+		visibility: hidden;
+	}
+	.characters .character1, .character2, .character3, .character4 {
+		min-height: 100px;
+		min-width: 100px;
+	}
+	.about .aboutbox .characters{
+		padding-top: 43%
+	}
+	.about .aboutbox .abouttitle{
+		font-size: 32px;
 	}
 }
 
@@ -1111,13 +1136,13 @@ html, body {
 		min-width: 100px;
 		min-height: 100px;
 	}
-	.about .aboutbox .descriptions{
+	.about .aboutbox .descriptions {
 		font-size: 30px;
 	}
-	.descriptions .desc{
+	.descriptions .desc {
 		min-width: 100px;
 	}
-	.loading .loadingbox .loadingtext{
+	.loading .loadingbox .loadingtext {
 		top: 55%;
 	}
 }

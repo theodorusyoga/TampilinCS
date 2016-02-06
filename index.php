@@ -37,11 +37,11 @@
 <title>Coming Soon: Tampilin.id</title>
 </head>
 <body>
-	<div class="warning">
+	<!-- <div class="warning">
 		<div class="rotateicon"></div>
 		<div class="text">Putar gadgetmu untuk mendapatkan tampilan interaktif
 			dari Tampilin.id!</div>
-	</div>
+	</div> -->
 	<div class="warningmobile">
 		Temukan lebih banyak lagi dengan membuka Tampilin.id di PCmu!
 	</div>
