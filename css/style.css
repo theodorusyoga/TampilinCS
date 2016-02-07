@@ -1055,11 +1055,19 @@ html, body {
 		min-height: 100px;
 		min-width: 100px;
 	}
-	.about .aboutbox .characters{
+	.about .aboutbox .characters {
 		padding-top: 43%
 	}
-	.about .aboutbox .abouttitle{
+	.about .aboutbox .abouttitle {
 		font-size: 32px;
+	}
+	.warningmobile {
+		visibility: visible;
+		min-height: 16px;
+		font-size: 10px;
+		font-family: 'Hind Vadodara', sans-serif;
+		background-color: #FF6F6F;
+		color: #FFFFFF
 	}
 }
 
